@@ -1,0 +1,36 @@
+# Entorno virtual
+venv/
+env/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Datos pesados (no subir a GitHub)
+Datos_originales/FIFA23complete_player_dataset/male_players.csv
+Datos_originales/FootballDatafromTransfermarkt/game_lineups.csv
+Datos_originales/FootballDatafromTransfermarkt/game_events.csv
+Datos_originales/FootballDatafromTransfermarkt/appearances.csv
+Datos_modificados/FootballDatafromTransfermarkt/player_valuations.xlsx
+Datos_modificados/FIFA23complete_player_dataset/female_players.txt
+Datos_modificados/FIFA23complete_player_dataset/male_players*.txt
+Datos_modificados/FIFA23complete_player_dataset/male_teams.txt
+
+# Reportes generados (se regeneran con el notebook)
+reports/*.html
+
+# Scripts temporales
+convertir_formatos.py
