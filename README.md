@@ -255,10 +255,13 @@ Este proyecto sigue los lineamientos del framework **DAMA-DMBOK** (Data Manageme
 ## Referencias
 
 Benz, R. (2024). football.csv — Mexico Liga MX [Conjunto de datos]. Open Football Data. https://footballcsv.github.io
+
 Cariboo, D. (2024). Football data from Transfermarkt [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/davidcariboo/player-scores
+
 DAMA International. (2017). DAMA-DMBOK: Data management body of knowledge (2nd ed.). Technics Publications.
-Cariboo, D. (2024). Football data from Transfermarkt [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/davidcariboo/player-scores
+
 Escareo, G. J. (2024). LigaMX matches 2016-2024 [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/gerardojaimeescareo/ligamx-matches-2016-2022
+
 Leone, S. (2023). FIFA 23 complete player dataset [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/stefanoleone992/fifa-23-complete-player-dataset
 
 ---
