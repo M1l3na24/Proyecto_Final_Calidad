@@ -8,10 +8,15 @@
 
 
 > **Equipo:**
+
 > Cruz Mendoza Valentina Ayelen
+> 
 > Monroy Villegas Isaac
+> 
 > Pérez Martínez Ángel Noel
+> 
 > Rivera Hernández Milena Fernanda
+> 
 > Zamora Antiga Ángel Javier
 
 ---
