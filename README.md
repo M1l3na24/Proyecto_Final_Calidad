@@ -15,7 +15,7 @@
 
 ---
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto aplica un pipeline completo de **calidad y preprocesamiento de datos** sobre información del fútbol mexicano (Liga MX), simulando el rol de un equipo de **inteligencia deportiva** para **Cruz Azul F.C.**
 
@@ -23,7 +23,7 @@ Los datos utilizados cubren la **Liga MX completa y el mercado global de jugador
 
 ---
 
-## 🏢 Contexto de Negocio
+## Contexto de Negocio
 
 **Cliente:** Departamento de Inteligencia Deportiva — Cruz Azul F.C. (La Máquina Cementera S.A. de C.V.)  
 **Sede:** Ciudad de México | **Títulos Liga MX:** 9 | **Participación:** CONCACAF Champions Cup
@@ -55,7 +55,7 @@ Cruz Azul busca construir una plataforma de datos integrada para tomar decisione
 
 ---
 
-## 📦 Fuentes de Datos
+## Fuentes de Datos
 
 | # | Dataset | Fuente | Formato | Descripción |
 |---|---|---|---|---|
@@ -78,7 +78,7 @@ Cruz Azul busca construir una plataforma de datos integrada para tomar decisione
 
 ---
 
-## 🗂️ Estructura del Repositorio
+## Estructura del Repositorio
 
 ```
 proyecto-cruzazul-calidad/
@@ -111,7 +111,7 @@ proyecto-cruzazul-calidad/
 
 ---
 
-## 🔬 Pipeline del Proyecto
+## Pipeline del Proyecto
 
 ```
 [Fuentes de datos — Liga MX completa + mercado global]
@@ -153,7 +153,7 @@ proyecto-cruzazul-calidad/
 
 ---
 
-## 📊 Análisis Realizados
+## Análisis Realizados
 
 ### Análisis Descriptivo
 - Distribución y comparativa de valores de mercado: Cruz Azul vs América, Chivas y Rayados
@@ -170,7 +170,7 @@ proyecto-cruzazul-calidad/
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 | Herramienta | Uso |
 |---|---|
@@ -207,7 +207,7 @@ pyarrow>=12.0.0
 
 ---
 
-## ▶️ Ejecución
+## Ejecución
 
 ```bash
 # 1. Clonar el repositorio
@@ -230,19 +230,7 @@ python notebooks/analisis.py                  # V. Análisis
 
 ---
 
-## 👥 Equipo
-
-| Nombre | Contribución principal |
-|---|---|
-| Cruz Mendoza Valentina Ayelen | Perfilado de datos |
-| Monroy Villegas Isaac | Limpieza y estandarización |
-| Pérez Martínez Ángel Noel | Record linkage y fusión |
-| Rivera Hernández Milena Fernanda | Análisis y visualizaciones |
-| Zamora Antiga Ángel Javier | Reporte y presentación |
-
----
-
-## 📚 Framework de Calidad de Datos
+##  Framework de Calidad de Datos
 
 Este proyecto sigue los lineamientos del framework **DAMA-DMBOK** (Data Management Body of Knowledge), enmarcando cada fase dentro de las dimensiones de calidad:
 
@@ -255,7 +243,7 @@ Este proyecto sigue los lineamientos del framework **DAMA-DMBOK** (Data Manageme
 
 ---
 
-## 📖 Referencias
+##  Referencias
 
 Benz, R. (2024). *football.csv — Mexico Liga MX* [Conjunto de datos]. Open Football Data. https://footballcsv.github.io
 
