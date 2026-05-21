@@ -6,13 +6,12 @@
 > **Profesores:** MCIC Víctor Manuel Corza Vargas · MCIC Fernando Avitúa Varela  
 > **Fecha de entrega:** 27 de mayo de 2025
 
-
-> **Equipo:**
-> Cruz Mendoza Valentina Ayelen
-> Monroy Villegas Isaac
-> Pérez Martínez Ángel Noel
-> Rivera Hernández Milena Fernanda
-> Zamora Antiga Ángel Javier
+> **Equipo:**  
+> Cruz Mendoza Valentina Ayelen  
+> Monroy Villegas Isaac  
+> Pérez Martínez Ángel Noel  
+> Rivera Hernández Milena Fernanda  
+> Zamora Antiga Ángel Javier  
 
 ---
 
@@ -74,6 +73,9 @@ Cruz Azul busca construir una plataforma de datos integrada para tomar decisione
 4. footballcsv.github.io → Mexico / Liga MX → Download .zip
 ```
 
+> **Nota:** Los archivos de datos no están incluidos en el repositorio por su tamaño.  
+> Descarga cada dataset desde los links anteriores y colócalos en la carpeta `data/raw/`.
+
 ---
 
 ## Estructura del Repositorio
@@ -82,18 +84,18 @@ Cruz Azul busca construir una plataforma de datos integrada para tomar decisione
 proyecto-cruzazul-calidad/
 │
 ├── data/
-│   ├── raw/                        # Datos originales sin modificar
+│   ├── raw/                        # Datos originales sin modificar (no versionados)
 │   │   ├── ligamx_matches.csv
 │   │   ├── fifa23_players.csv
 │   │   ├── transfermarkt_players.csv
 │   │   └── footballcsv_ligamx.csv
 │   ├── processed/                  # Datos limpios y transformados
-│   └── master/                     # Datos maestros fusionados
+│   └── master/                     # Datos maestros fusionados (.parquet)
 │
 ├── notebooks/
-│   ├── perfilado.ipynb             # Perfilado de las 4 fuentes
+│   ├── perfilado.ipynb             # Perfilado antes y después de la limpieza
 │   ├── limpieza.py                 # Limpieza: outliers, patrones, completitud
-│   ├── fusion.ipynb                # Record linkage y fusión de datos maestros
+│   ├── fusion.ipynb                # Integración, record linkage y modelo canónico
 │   └── analisis.py                 # Análisis descriptivo, predictivo y prescriptivo
 │
 ├── reports/
@@ -102,6 +104,7 @@ proyecto-cruzazul-calidad/
 │   ├── reporte_maestros.pdf
 │   └── reporte_preprocesamiento.pdf
 │
+├── .gitignore                      # Excluye data/raw/ y data/master/ del repositorio
 ├── README.md
 └── requirements.txt
 ```
@@ -114,33 +117,34 @@ proyecto-cruzazul-calidad/
 [Fuentes de datos — Liga MX completa + mercado global]
         │
         ▼
-[I. Perfilado]          → perfilado.ipynb
-  - Estadísticas descriptivas por fuente
-  - Detección de nulos, duplicados, tipos de dato
-  - Análisis de distribuciones y outliers
+[I. Integración]              → fusion.ipynb
+  - Estandarización de todas las fuentes a formato CSV/Parquet
+  - Integración formal de las bases
+  - Record linkage y deduplicación entre fuentes
+  - Definición del modelo canónico de jugador y partido
         │
         ▼
-[II. Limpieza]          → limpieza.py
+[II. Perfilado previo]        → perfilado.ipynb
+  - Estadísticas descriptivas por fuente
+  - Detección de nulos, duplicados y tipos de dato
+  - Análisis de distribuciones y outliers
+  - Documentación del estado inicial de calidad
+        │
+        ▼
+[III. Limpieza]               → limpieza.py
   - Completar datos faltantes
   - Eliminar / tratar outliers
-  - Estandarizar nombres, fechas, unidades
+  - Estandarizar nombres, fechas y unidades
   - Forzar patrones (nacionalidades, posiciones, nombres)
         │
         ▼
-[III. Datos Maestros]   → fusion.ipynb
-  - Definir modelo canónico de jugador y partido
-  - Record linkage entre fuentes (deduplicación)
-  - Fusión consolidada
+[IV. Perfilado posterior]     → perfilado.ipynb
+  - Mismas métricas que el perfilado previo
+  - Comparativa antes vs después de la limpieza
+  - Evidencia cuantitativa de mejora en calidad
         │
         ▼
-[IV. Preprocesamiento]  → analisis.py
-  - Normalización de métricas
-  - Discretización (rangos de edad, valor de mercado)
-  - Estandarización de escalas
-  - Reducción de dimensiones (PCA si aplica)
-        │
-        ▼
-[V. Análisis]           → analisis.py
+[V. Análisis]                 → analisis.py
   - Resolución de las 5 problemáticas de Cruz Azul
   - 10 consultas multi-fuente (benchmarking vs rivales)
   - 5 consultas por fuente
@@ -177,7 +181,8 @@ proyecto-cruzazul-calidad/
 | recordlinkage | Deduplicación y record linkage |
 | scikit-learn | Preprocesamiento y modelos |
 | jupyter | Notebooks interactivos |
-| fuzzywuzzy / rapidfuzz | Matching de nombres aproximado |
+| rapidfuzz | Matching de nombres aproximado |
+| pyarrow | Lectura y escritura de archivos Parquet |
 
 ### Instalación
 
@@ -197,6 +202,7 @@ scikit-learn>=1.1.0
 jupyter>=1.0.0
 rapidfuzz>=2.13.0
 openpyxl>=3.0.10
+pyarrow>=12.0.0
 ```
 
 ---
@@ -211,30 +217,20 @@ cd proyecto-cruzazul-calidad
 # 2. Instalar dependencias
 pip install -r requirements.txt
 
-# 3. Colocar los datos crudos en data/raw/
+# 3. Descargar los datasets y colocarlos en data/raw/
+#    (ver links en la sección Fuentes de Datos)
 
 # 4. Ejecutar el pipeline en orden:
-jupyter notebook notebooks/perfilado.ipynb
-python notebooks/limpieza.py
-jupyter notebook notebooks/fusion.ipynb
-python notebooks/analisis.py
+jupyter notebook notebooks/fusion.ipynb       # I. Integración
+jupyter notebook notebooks/perfilado.ipynb    # II. Perfilado previo
+python notebooks/limpieza.py                  # III. Limpieza
+#    (volver a perfilado.ipynb para IV. Perfilado posterior)
+python notebooks/analisis.py                  # V. Análisis
 ```
 
 ---
 
-## Equipo
-
-| Nombre | Contribución principal |
-|---|---|
-| Integrante 1 | Perfilado de datos |
-| Integrante 2 | Limpieza y estandarización |
-| Integrante 3 | Record linkage y fusión |
-| Integrante 4 | Análisis y visualizaciones |
-| Integrante 5 | Reporte y presentación |
-
----
-
-## Framework de Calidad de Datos
+##  Framework de Calidad de Datos
 
 Este proyecto sigue los lineamientos del framework **DAMA-DMBOK** (Data Management Body of Knowledge), enmarcando cada fase dentro de las dimensiones de calidad:
 
@@ -247,14 +243,17 @@ Este proyecto sigue los lineamientos del framework **DAMA-DMBOK** (Data Manageme
 
 ---
 
-## Referencias
+##  Referencias
 
-Benz, R. (2024). football.csv — Mexico Liga MX [Conjunto de datos]. Open Football Data. https://footballcsv.github.io
-Cariboo, D. (2024). Football data from Transfermarkt [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/davidcariboo/player-scores
-DAMA International. (2017). DAMA-DMBOK: Data management body of knowledge (2nd ed.). Technics Publications.
-Cariboo, D. (2024). Football data from Transfermarkt [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/davidcariboo/player-scores
-Escareo, G. J. (2024). LigaMX matches 2016-2024 [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/gerardojaimeescareo/ligamx-matches-2016-2022
-Leone, S. (2023). FIFA 23 complete player dataset [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/stefanoleone992/fifa-23-complete-player-dataset
+Benz, R. (2024). *football.csv — Mexico Liga MX* [Conjunto de datos]. Open Football Data. https://footballcsv.github.io
+
+Cariboo, D. (2024). *Football data from Transfermarkt* [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/davidcariboo/player-scores
+
+DAMA International. (2017). *DAMA-DMBOK: Data management body of knowledge* (2nd ed.). Technics Publications.
+
+Escareo, G. J. (2024). *LigaMX matches 2016-2024* [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/gerardojaimeescareo/ligamx-matches-2016-2022
+
+Leone, S. (2023). *FIFA 23 complete player dataset* [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/stefanoleone992/fifa-23-complete-player-dataset
 
 ---
 
