@@ -4079,3 +4079,13 @@ match_id,season,season_year,half,round,date,home_team_id,home_team,away_team_id,
 5077,Clausura 2025,2025,clausura,17,2025-04-23,T002,Club América,T008,Atlas Guadalajara,0,1,0,0,Estadio Azteca,L,0
 5078,Clausura 2025,2025,clausura,17,2025-04-23,T001,Cruz Azul FC,T013,Bravos de Juárez,4,0,4,0,Estadio Ciudad de los Deportes,W,1
 5079,Clausura 2025,2025,clausura,17,2025-04-23,T003,Rayados,T006,Club León,0,0,0,0,Estadio BBVA,D,0
+4441,Clausura 2023,2023,clausura,6,2023-02-05,T004,Guadalajara,T015,Impulsora Necaxa,3,3,3,0,Estadio Akron,D,0
+3512,Apertura 2019,2019,apertura,9,2019-08-26,T013,FC Juárez,T004,Chivas,1,0,1,0,Estadio Olímpico Benito Juárez,W,0
+2310,Clausura 2015,2015,clausura,11,2015-03-12,T012,Xoloitzcuintles,T018,Dorados Sinaloa,2,2,0,0,Estadio Caliente,D,0
+2038,Clausura 2014,2014,clausura,11,2014-03-12,T007,UNAM Pumas,T006,León FC,2,0,0,0,Estadio Olímpico Universitario,W,0
+1134,Apertura 2010,2010,apertura,17,2010-10-21,T010,Toluca FC,T017,La Franja,0,0,0,0,Estadio Nemesio Díez,D,0
+2833,Clausura 2017,2017,clausura,9,2017-02-26,T016,Querétaro FC,T018,Dorados Sinaloa,3,1,0,1,Estadio Corregidora,W,0
+1804,Clausura 2013,2013,clausura,16,2013-04-16,T012,Tijuana,T015,Necaxa,1,2,1,0,Estadio Caliente,L,0
+3505,Apertura 2019,2019,apertura,8,2019-08-19,T014,A. San Luis,T001,Cruz Azul FC,1,0,1,0,Estadio Alfonso Lastras,W,1
+1476,Clausura 2012,2012,clausura,9,2012-02-26,T015,Necaxa,T010,Toluca FC,2,0,1,0,Estadio Victoria,W,0
+1781,Clausura 2013,2013,clausura,13,2013-03-26,T017,La Franja,T001,Cruz Azul FC,1,1,0,1,Estadio Cuauhtémoc,D,1

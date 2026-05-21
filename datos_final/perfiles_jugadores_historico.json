@@ -1,7 +1,7 @@
 {
   "metadata": {
     "dataset": "Liga MX — Perfiles de jugadores 2010-2024",
-    "total_registros": 1150,
+    "total_registros": 1158,
     "rango_temporal": "2010-2024",
     "fuentes": [
       "FIFA 23 (Leone, Kaggle 2023)",
@@ -57508,6 +57508,406 @@
           "tarjetas_amarillas": 9,
           "tarjetas_rojas": 0,
           "g_a_por_90": 0.297
+        }
+      }
+    },
+    {
+      "player_id": "P0753",
+      "fuentes": {
+        "football_csv": {
+          "nombre": "Tabó, Diego",
+          "equipo": "FC Juárez",
+          "temporada": "Clausura 2022"
+        },
+        "transfermarkt": {
+          "nombre": "Diego Tabó",
+          "valor_mercado_eur": 2350000,
+          "transfer_paid_eur": 3353883,
+          "fecha_actualizacion": "2022-06-01"
+        },
+        "fifa": {
+          "nombre": "D. Tabó",
+          "overall": 67,
+          "pace": 70,
+          "shooting": 47,
+          "passing": 64,
+          "dribbling": 87,
+          "defending": 81,
+          "physical": 65
+        }
+      },
+      "datos_consolidados": {
+        "posicion": "RB",
+        "nacionalidad": "México",
+        "segunda_nacionalidad": null,
+        "es_extranjero": false,
+        "doble_nacionalidad": false,
+        "edad": 26,
+        "temporada": "Clausura 2022",
+        "season_year": 2022,
+        "equipo_id": "T013",
+        "rendimiento": {
+          "goles": 2,
+          "asistencias": 0,
+          "minutos_jugados": 1296,
+          "partidos": 14,
+          "partidos_casa": 7,
+          "goles_casa": 0,
+          "partidos_fuera": 7,
+          "goles_fuera": 2,
+          "tarjetas_amarillas": 4,
+          "tarjetas_rojas": 0,
+          "g_a_por_90": 0.139
+        }
+      }
+    },
+    {
+      "player_id": "P0474",
+      "fuentes": {
+        "football_csv": {
+          "nombre": "Giménez A.",
+          "equipo": "Tijuana",
+          "temporada": "Apertura 2014"
+        },
+        "transfermarkt": {
+          "nombre": "Alan Giménez",
+          "valor_mercado_eur": 750000,
+          "transfer_paid_eur": 935145,
+          "fecha_actualizacion": "2014-06-01"
+        },
+        "fifa": {
+          "nombre": "A. Giménez",
+          "overall": 64,
+          "pace": 72,
+          "shooting": 41,
+          "passing": 79,
+          "dribbling": 62,
+          "defending": 64,
+          "physical": 71
+        }
+      },
+      "datos_consolidados": {
+        "posicion": "CM",
+        "nacionalidad": "México",
+        "segunda_nacionalidad": null,
+        "es_extranjero": false,
+        "doble_nacionalidad": false,
+        "edad": 36,
+        "temporada": "Apertura 2014",
+        "season_year": 2014,
+        "equipo_id": "T012",
+        "rendimiento": {
+          "goles": 0,
+          "asistencias": 2,
+          "minutos_jugados": 1931,
+          "partidos": 21,
+          "partidos_casa": 10,
+          "goles_casa": 0,
+          "partidos_fuera": 11,
+          "goles_fuera": 0,
+          "tarjetas_amarillas": 1,
+          "tarjetas_rojas": 2,
+          "g_a_por_90": 0.093
+        }
+      }
+    },
+    {
+      "player_id": "P0036",
+      "fuentes": {
+        "football_csv": {
+          "nombre": "Ochoa H.",
+          "equipo": "Santos",
+          "temporada": "Apertura 2010"
+        },
+        "transfermarkt": {
+          "nombre": "Hirving Ochoa",
+          "valor_mercado_eur": 1250000,
+          "transfer_paid_eur": 1045461,
+          "fecha_actualizacion": "2010-06-01"
+        },
+        "fifa": {
+          "nombre": "H. Ochoa",
+          "overall": 63,
+          "pace": 58,
+          "shooting": 56,
+          "passing": 88,
+          "dribbling": 57,
+          "defending": 78,
+          "physical": 59
+        }
+      },
+      "datos_consolidados": {
+        "posicion": "RB",
+        "nacionalidad": "México",
+        "segunda_nacionalidad": null,
+        "es_extranjero": false,
+        "doble_nacionalidad": false,
+        "edad": 27,
+        "temporada": "Apertura 2010",
+        "season_year": 2010,
+        "equipo_id": "T009",
+        "rendimiento": {
+          "goles": 4,
+          "asistencias": 4,
+          "minutos_jugados": 1398,
+          "partidos": 15,
+          "partidos_casa": 7,
+          "goles_casa": 2,
+          "partidos_fuera": 8,
+          "goles_fuera": 2,
+          "tarjetas_amarillas": 0,
+          "tarjetas_rojas": 0,
+          "g_a_por_90": 0.515
+        }
+      }
+    },
+    {
+      "player_id": "P0887",
+      "fuentes": {
+        "football_csv": {
+          "nombre": "Mayorga U.",
+          "equipo": "América",
+          "temporada": "Apertura 2015"
+        },
+        "transfermarkt": {
+          "nombre": "Uriel Mayorga",
+          "valor_mercado_eur": 1500000,
+          "transfer_paid_eur": 1843429,
+          "fecha_actualizacion": "2015-06-01"
+        },
+        "fifa": {
+          "nombre": "U. Mayorga",
+          "overall": 68,
+          "pace": 59,
+          "shooting": 78,
+          "passing": 56,
+          "dribbling": 86,
+          "defending": 32,
+          "physical": 58
+        }
+      },
+      "datos_consolidados": {
+        "posicion": "LW",
+        "nacionalidad": "México",
+        "segunda_nacionalidad": null,
+        "es_extranjero": false,
+        "doble_nacionalidad": false,
+        "edad": 29,
+        "temporada": "Apertura 2015",
+        "season_year": 2015,
+        "equipo_id": "T002",
+        "rendimiento": {
+          "goles": 1,
+          "asistencias": 5,
+          "minutos_jugados": 1304,
+          "partidos": 14,
+          "partidos_casa": 7,
+          "goles_casa": 0,
+          "partidos_fuera": 7,
+          "goles_fuera": 1,
+          "tarjetas_amarillas": 4,
+          "tarjetas_rojas": 0,
+          "g_a_por_90": 0.414
+        }
+      }
+    },
+    {
+      "player_id": "P0235",
+      "fuentes": {
+        "football_csv": {
+          "nombre": "Suárez B.",
+          "equipo": "Club Necaxa",
+          "temporada": "Clausura 2023"
+        },
+        "transfermarkt": {
+          "nombre": "Bruno Suárez",
+          "valor_mercado_eur": 2450000,
+          "transfer_paid_eur": 3695227,
+          "fecha_actualizacion": "2023-06-01"
+        },
+        "fifa": {
+          "nombre": "B. Suárez",
+          "overall": 65,
+          "pace": 59,
+          "shooting": 57,
+          "passing": 81,
+          "dribbling": 55,
+          "defending": 35,
+          "physical": 58
+        }
+      },
+      "datos_consolidados": {
+        "posicion": "CM",
+        "nacionalidad": "Honduras",
+        "segunda_nacionalidad": null,
+        "es_extranjero": true,
+        "doble_nacionalidad": false,
+        "edad": 23,
+        "temporada": "Clausura 2023",
+        "season_year": 2023,
+        "equipo_id": "T015",
+        "rendimiento": {
+          "goles": 0,
+          "asistencias": 2,
+          "minutos_jugados": 1380,
+          "partidos": 15,
+          "partidos_casa": 7,
+          "goles_casa": 0,
+          "partidos_fuera": 8,
+          "goles_fuera": 0,
+          "tarjetas_amarillas": 9,
+          "tarjetas_rojas": 1,
+          "g_a_por_90": 0.13
+        }
+      }
+    },
+    {
+      "player_id": "P1028",
+      "fuentes": {
+        "football_csv": {
+          "nombre": "Dávila C.",
+          "equipo": "León",
+          "temporada": "Clausura 2018"
+        },
+        "transfermarkt": {
+          "nombre": "Carlos Dávila",
+          "valor_mercado_eur": 2350000,
+          "transfer_paid_eur": 3265009,
+          "fecha_actualizacion": "2018-06-01"
+        },
+        "fifa": {
+          "nombre": "C. Dávila",
+          "overall": 73,
+          "pace": 73,
+          "shooting": 81,
+          "passing": 84,
+          "dribbling": 76,
+          "defending": 63,
+          "physical": 88
+        }
+      },
+      "datos_consolidados": {
+        "posicion": "CAM",
+        "nacionalidad": "México",
+        "segunda_nacionalidad": null,
+        "es_extranjero": false,
+        "doble_nacionalidad": false,
+        "edad": 20,
+        "temporada": "Clausura 2018",
+        "season_year": 2018,
+        "equipo_id": "T006",
+        "rendimiento": {
+          "goles": 0,
+          "asistencias": 1,
+          "minutos_jugados": 1794,
+          "partidos": 19,
+          "partidos_casa": 9,
+          "goles_casa": 0,
+          "partidos_fuera": 10,
+          "goles_fuera": 0,
+          "tarjetas_amarillas": 4,
+          "tarjetas_rojas": 1,
+          "g_a_por_90": 0.05
+        }
+      }
+    },
+    {
+      "player_id": "P0241",
+      "fuentes": {
+        "football_csv": {
+          "nombre": "Dávila J.",
+          "equipo": "CF América",
+          "temporada": "Clausura 2016"
+        },
+        "transfermarkt": {
+          "nombre": "Jesús Dávila",
+          "valor_mercado_eur": 1100000,
+          "transfer_paid_eur": 1172868,
+          "fecha_actualizacion": "2016-06-01"
+        },
+        "fifa": {
+          "nombre": "J. Dávila",
+          "overall": 62,
+          "pace": 79,
+          "shooting": 79,
+          "passing": 73,
+          "dribbling": 60,
+          "defending": 30,
+          "physical": 58
+        }
+      },
+      "datos_consolidados": {
+        "posicion": "LW",
+        "nacionalidad": "México",
+        "segunda_nacionalidad": null,
+        "es_extranjero": false,
+        "doble_nacionalidad": false,
+        "edad": 34,
+        "temporada": "Clausura 2016",
+        "season_year": 2016,
+        "equipo_id": "T002",
+        "rendimiento": {
+          "goles": 1,
+          "asistencias": 2,
+          "minutos_jugados": 2377,
+          "partidos": 26,
+          "partidos_casa": 13,
+          "goles_casa": 0,
+          "partidos_fuera": 13,
+          "goles_fuera": 1,
+          "tarjetas_amarillas": 0,
+          "tarjetas_rojas": 0,
+          "g_a_por_90": 0.114
+        }
+      }
+    },
+    {
+      "player_id": "P0245",
+      "fuentes": {
+        "football_csv": {
+          "nombre": "Yotún P.",
+          "equipo": "UNAM Pumas",
+          "temporada": "Clausura 2010"
+        },
+        "transfermarkt": {
+          "nombre": "Pablo Yotún",
+          "valor_mercado_eur": 2350000,
+          "transfer_paid_eur": 3327632,
+          "fecha_actualizacion": "2010-06-01"
+        },
+        "fifa": {
+          "nombre": "P. Yotún",
+          "overall": 72,
+          "pace": 55,
+          "shooting": 76,
+          "passing": 56,
+          "dribbling": 64,
+          "defending": 57,
+          "physical": 59
+        }
+      },
+      "datos_consolidados": {
+        "posicion": "CAM",
+        "nacionalidad": "Jamaica",
+        "segunda_nacionalidad": null,
+        "es_extranjero": true,
+        "doble_nacionalidad": false,
+        "edad": 27,
+        "temporada": "Clausura 2010",
+        "season_year": 2010,
+        "equipo_id": "T007",
+        "rendimiento": {
+          "goles": 1,
+          "asistencias": 0,
+          "minutos_jugados": 2342,
+          "partidos": 26,
+          "partidos_casa": 13,
+          "goles_casa": 0,
+          "partidos_fuera": 13,
+          "goles_fuera": 1,
+          "tarjetas_amarillas": 5,
+          "tarjetas_rojas": 1,
+          "g_a_por_90": 0.038
         }
       }
     }
